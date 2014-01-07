@@ -30,8 +30,8 @@ describe "Bootstrap Renderer" do
   let(:output) do
     will_paginate(
       collection.paginate(:page => page, :per_page => 1),
-      renderer: MockRenderer, link_options: link_options,
-      class: class_opt
+      :renderer => MockRenderer, :link_options => link_options,
+      :class => class_opt
     )
   end
 
